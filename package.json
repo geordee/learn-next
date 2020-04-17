@@ -1,0 +1,27 @@
+{
+  "name": "learn-next",
+  "version": "1.0.0",
+  "description": "Follow the Next.js documentation and build the tutorial commit by commit.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geordee/learn-next.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geordee/learn-next/issues"
+  },
+  "homepage": "https://github.com/geordee/learn-next#readme",
+  "dependencies": {
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
