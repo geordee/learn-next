@@ -2,16 +2,20 @@ import Layout from "../components/MyLayout";
 import Link from "next/link";
 import fetch from "isomorphic-unfetch";
 
+const ShowLink = ({ show }) => (
+  <li key={show.id}>
+    <Link href="/p/[id]" as={`/p/${show.id}`}>
+      <a>{show.name}</a>
+    </Link>
+  </li>
+);
+
 const Index = (props) => (
   <Layout>
     <h1>Batman TV Shows</h1>
     <ul>
       {props.shows.map((show) => (
-        <li key={show.id}>
-          <Link href="/p/[id]" as={`/p/${show.id}`}>
-            <a>{show.name}</a>
-          </Link>
-        </li>
+        <ShowLink key={show.id} show={show} />
       ))}
     </ul>
     <style jsx>{`
