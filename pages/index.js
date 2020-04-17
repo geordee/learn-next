@@ -15,6 +15,11 @@ const Index = (props) => (
           <a title="Posts">Posts</a>
         </Link>
       </li>
+      <li>
+        <Link href="/quote">
+          <a title="Random Quote">Random Quote</a>
+        </Link>
+      </li>
     </ul>
   </Layout>
 );

@@ -15,6 +15,9 @@ const Header = () => (
     <Link href="/posts">
       <a style={linkStyle}>Posts</a>
     </Link>
+    <Link href="/quote">
+      <a style={linkStyle}>Random Quote</a>
+    </Link>
   </div>
 );
 
