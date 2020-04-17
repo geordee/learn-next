@@ -1,15 +1,16 @@
 import Header from './Header';
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD'
-};
-
-const Layout = props => (
-  <div style={layoutStyle}>
+const Layout = (props) => (
+  <div id="container">
     <Header />
     {props.children}
+    <style jsx>{`
+      div#container {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #DDD;
+      }
+    `}</style>
   </div>
 );
 
